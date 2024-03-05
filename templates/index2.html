@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese to English Translator</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="chinese_text">Chinese Text:</label>
+        <input type="text" id="chinese_text" name="chinese_text" required>
+        <button type="submit">Translate</button>
+    </form>
+    {% if english_translation %}
+    <p>English Translation: {{ english_translation }}</p>
+    {% endif %}
+</body>
+</html>
